@@ -1,0 +1,45 @@
+<svg width="1000" height="1080" viewBox="0 0 1000 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1000" height="1080" fill="#F5F7FB"/>
+  <rect x="120" y="70" width="760" height="88" rx="26" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="165" y="124" fill="#334155" font-family="Helvetica" font-size="28" font-weight="700">macOS menu bar</text>
+  <circle cx="660" cy="114" r="26" stroke="#E6EAF0" stroke-width="9"/>
+  <circle cx="660" cy="114" r="26" stroke="#337AF7" stroke-width="9" stroke-linecap="round" pathLength="100" stroke-dasharray="62 38" transform="rotate(-90 660 114)"/>
+  <text x="700" y="124" fill="#111827" font-family="Helvetica" font-size="25" font-weight="700">Codex 62%</text>
+
+  <rect x="280" y="205" width="440" height="770" rx="34" fill="#FFFFFF" stroke="#D8DEE8"/>
+  <text x="325" y="270" fill="#111827" font-family="Helvetica" font-size="34" font-weight="700">AirKwotes</text>
+  <text x="327" y="307" fill="#64748B" font-family="Helvetica" font-size="19">Monitoring</text>
+
+  <rect x="325" y="345" width="350" height="62" rx="16" fill="#EFF6FF"/>
+  <text x="356" y="383" fill="#1E3A8A" font-family="Helvetica" font-size="20" font-weight="700">Relay server</text>
+  <rect x="600" y="362" width="46" height="26" rx="13" fill="#337AF7"/>
+  <circle cx="633" cy="375" r="10" fill="#FFFFFF"/>
+
+  <g font-family="Helvetica">
+    <circle cx="363" cy="474" r="30" stroke="#E6EAF0" stroke-width="9"/>
+    <circle cx="363" cy="474" r="30" stroke="#22C55E" stroke-width="9" stroke-linecap="round" pathLength="100" stroke-dasharray="74 26" transform="rotate(-90 363 474)"/>
+    <text x="413" y="465" fill="#111827" font-size="24" font-weight="700">Claude Code</text>
+    <text x="413" y="499" fill="#64748B" font-size="18">5h: 74%, weekly: 91%</text>
+
+    <rect x="325" y="535" width="350" height="1" fill="#E5E7EB"/>
+    <circle cx="363" cy="598" r="30" stroke="#E6EAF0" stroke-width="9"/>
+    <circle cx="363" cy="598" r="30" stroke="#F59E0B" stroke-width="9" stroke-linecap="round" pathLength="100" stroke-dasharray="38 62" transform="rotate(-90 363 598)"/>
+    <text x="413" y="589" fill="#111827" font-size="24" font-weight="700">Codex</text>
+    <text x="413" y="623" fill="#64748B" font-size="18">5h: 38%, weekly: 86%</text>
+
+    <rect x="325" y="659" width="350" height="1" fill="#E5E7EB"/>
+    <circle cx="363" cy="722" r="30" stroke="#E6EAF0" stroke-width="9"/>
+    <circle cx="363" cy="722" r="30" stroke="#EF4444" stroke-width="9" stroke-linecap="round" pathLength="100" stroke-dasharray="12 88" transform="rotate(-90 363 722)"/>
+    <text x="413" y="713" fill="#111827" font-size="24" font-weight="700">GLM</text>
+    <text x="413" y="747" fill="#64748B" font-size="18">Token window almost out</text>
+
+    <rect x="325" y="782" width="350" height="1" fill="#E5E7EB"/>
+    <text x="325" y="838" fill="#111827" font-size="24" font-weight="700">OpenRouter</text>
+    <text x="325" y="872" fill="#64748B" font-size="18">$17.42 remaining</text>
+
+    <rect x="325" y="905" width="160" height="48" rx="14" fill="#F1F5F9"/>
+    <text x="370" y="936" fill="#111827" font-size="18" font-weight="700">Manage</text>
+    <rect x="505" y="905" width="170" height="48" rx="14" fill="#111827"/>
+    <text x="565" y="936" fill="#FFFFFF" font-size="18" font-weight="700">Quit</text>
+  </g>
+</svg>

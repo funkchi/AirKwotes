@@ -1,12 +1,61 @@
 # AirKwotes
 
-A macOS menu-bar app that tracks your AI subscription quotas and (optionally)
-exposes those subscriptions as local OpenAI/Gemini-compatible endpoints.
+AirKwotes is a macOS menu-bar app for people who use several AI tools and want
+one simple answer: **how much quota do I have left?**
 
-The menu bar shows a **ring** for one chosen provider's remaining quota; click
-it for a dropdown of every provider. Keys live in the macOS Keychain; most
-quota readers are **zero-config** — they reuse the logins Claude Code / Codex /
-Gemini CLI already store on your machine.
+It shows a small **ring** in the menu bar for your chosen provider. Click it to
+see every connected provider, open the setup window, or turn on the optional
+local relay for tools that speak OpenAI/Gemini-compatible APIs.
+
+![Menu popover preview](docs/images/menu-popover.svg)
+
+## Install for Mac
+
+### Easiest: download the app
+
+1. Open the [Releases page](https://github.com/funkchi/AirKwotes/releases).
+2. Download `AirKwotes-0.1.0.dmg`.
+3. Open the `.dmg` and drag **AirKwotes** into **Applications**.
+4. First launch only: right-click **AirKwotes** -> **Open** -> **Open**.
+5. Click the menu-bar ring -> **Manage** -> **Providers** to add Claude Code,
+   Codex, Gemini, GLM, OpenRouter, or API-key providers.
+
+For a slower, screenshot-style walkthrough, see
+[`docs/install.md`](docs/install.md).
+
+### Comfortable with Terminal?
+
+```sh
+brew tap funkchi/airkwotes
+brew install --cask airkwotes
+```
+
+Or build from source:
+
+```sh
+git clone https://github.com/funkchi/AirKwotes.git
+cd AirKwotes
+make cert
+make run
+```
+
+## What It Looks Like
+
+### Menu-bar ring
+
+The menu-bar icon is a quota ring. Green means plenty left, orange means getting
+low, and red means close to the limit.
+
+### Provider setup
+
+Claude Code, Codex, and Gemini can work without pasting an API key because
+AirKwotes reads local logins, logs, or rate-limit signals those tools already
+store on your Mac. Other providers use API keys saved in the macOS Keychain.
+
+### Local relay
+
+The Relay tab can expose signed-in subscriptions on `127.0.0.1` for local tools.
+It is optional, off by default, and protected by a local `sk-...` key.
 
 > ⚠️ **Terms-of-service notice.** AirKwotes reads rate-limit logs and, for the
 > relay, forwards requests to upstream subscriptions (OpenAI Codex, Google
@@ -18,7 +67,7 @@ Gemini CLI already store on your machine.
 
 ---
 
-## What it tracks / relays
+## What It Tracks
 
 ### Quota providers
 | Provider | How it's read | Notes |
@@ -40,34 +89,6 @@ Gemini CLI already store on your machine.
 
 The relay is **loopback-only** and authenticated by a local `sk-…` key you copy
 from the Relay tab.
-
----
-
-## Install
-
-### Option A — Homebrew (unsigned 0.1.0)
-```sh
-brew tap funkchi/airkwotes
-brew install --cask airkwotes
-```
-The cask strips the Gatekeeper quarantine flag on install. On the very first
-launch, right-click the app → **Open** → **Open** (or run
-`xattr -dr com.apple.quarantine /Applications/AirKwotes.app`).
-
-### Option B — Direct download
-Grab `AirKwotes-0.1.0.dmg` from the
-[releases page](https://github.com/funkchi/AirKwotes/releases), drag to
-**Applications**, then right-click → **Open** the first time (Gatekeeper
-prompt — the app is not yet notarized).
-
-### Option C — Build from source
-Requires macOS 14+ and the Xcode command-line tools.
-```sh
-git clone https://github.com/funkchi/AirKwotes.git
-cd AirKwotes
-make cert      # one-time: local self-signed identity (stops Keychain prompts)
-make run       # build, sign, launch
-```
 
 ---
 
