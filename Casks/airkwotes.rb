@@ -1,6 +1,6 @@
 cask "airkwotes" do
   version "0.1.0"
-  sha256 "6eeb2e6c02a9774712edc96a495c87a191fe77fe1a6471987e486ff7fdc55a3c"
+  sha256 "1ab8bdee4a2f736b6f690c943f4f49d60d86dbcdb5f281013bbdf06658f6a98f"
 
   url "https://github.com/funkchi/AirKwotes/releases/download/v#{version}/AirKwotes-#{version}.dmg",
       verified: "github.com/funkchi/AirKwotes/"
