@@ -1,0 +1,28 @@
+# Build artifacts
+build/
+dist/
+DerivedData/
+.build/
+.swiftpm/
+
+# Xcode (generated from project.yml via xcodegen)
+*.xcodeproj
+*.xcworkspace
+xcuserdata/
+
+# macOS
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Local signing secrets / env
+*.p12
+*.pem
+*.cer
+.env
+.env.*
+
+# Local agent / IDE state
+.claude/
+.vscode/

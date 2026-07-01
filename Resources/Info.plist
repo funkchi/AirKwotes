@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleName</key>
+	<string>AirKwotes</string>
+	<key>CFBundleDisplayName</key>
+	<string>AirKwotes</string>
+	<key>CFBundleIdentifier</key>
+	<string>ai.airkwotes.app</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.1.0</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleExecutable</key>
+	<string>AirKwotes</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>14.0</string>
+	<key>LSUIElement</key>
+	<true/>
+	<key>LSApplicationCategoryType</key>
+	<string>public.app-category.developer-tools</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSUserNotificationsUsageDescription</key>
+	<string>AirKwotes notifies you when an AI quota runs low.</string>
+	<key>NSRemindersUsageDescription</key>
+	<string>AirKwotes creates a Reminder with your quota snapshot when you request one.</string>
+	<key>NSAppleEventsUsageDescription</key>
+	<string>AirKwotes opens its setup window on demand.</string>
+</dict>
+</plist>

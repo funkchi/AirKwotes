@@ -1,0 +1,31 @@
+name: AirKwotes
+options:
+  bundleIdPrefix: ai.airkwotes
+  deploymentTarget:
+    macOS: "14.0"
+  createIntermediateGroups: true
+targets:
+  AirKwotes:
+    type: application
+    platform: macOS
+    sources:
+      - path: Sources
+    resources:
+      - path: Resources
+    info:
+      path: Resources/Info.plist
+      properties:
+        LSUIElement: true
+        LSMinimumSystemVersion: "14.0"
+        NSAppTransportSecurity:
+          NSAllowsArbitraryLoads: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: ai.airkwotes.app
+        PRODUCT_NAME: AirKwotes
+        MARKETING_VERSION: "1.0.0"
+        CURRENT_PROJECT_VERSION: "1"
+        CODE_SIGN_ENTITLEMENTS: Resources/AirKwotes.entitlements
+        ENABLE_HARDENED_RUNTIME: YES
+        GENERATE_INFOPLIST_FILE: NO
+        SWIFT_VERSION: "5.0"
